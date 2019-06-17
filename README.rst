@@ -2,17 +2,26 @@
 Cookiecutter PyPackage
 ======================
 
+.. image:: https://travis-ci.org/sandervandorsten/cookiecutter-pypackage.svg?branch=master
+    :target: https://travis-ci.org/sandervandorsten/cookiecutter-pypackage
+    :alt: Linux build status on Travis
+
+.. image:: https://ci.appveyor.com/api/projects/status/github/sandervandorsten/cookiecutter-pypackage?branch=master&svg=true
+    :target: https://ci.appveyor.com/project/sandervandorsten/cookiecutter-pypackage/branch/master
+    :alt: Windows build status on Appveyor
+
 .. image:: https://pyup.io/repos/github/sandervandorsten/cookiecutter-pypackage/shield.svg
      :target: https://pyup.io/repos/github/sandervandorsten/cookiecutter-pypackage/
      :alt: Updates
 
-.. image:: https://travis-ci.org/sandervandorsten/cookiecutter-pypackage.svg?branch=master
-    :target: https://travis-ci.org/sandervandorsten/cookiecutter-pypackage
+.. image:: https://readthedocs.org/projects/cookiecutter-pypackage-svd/badge/?version=latest
+    :target: https://cookiecutter-pypackage-svd.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
 
 Cookiecutter_ template for a Python package.
 
 * GitHub repo: https://github.com/sandervandorsten/cookiecutter-pypackage/
-* Documentation: https://cookiecutter-pypackage.readthedocs.io/
+* Documentation: https://cookiecutter-pypackage-svd.readthedocs.io/
 * Free software: BSD license
 
 Features
@@ -24,9 +33,18 @@ Features
 * Sphinx_ docs: Documentation ready for generation with, for example, ReadTheDocs_
 * Bumpversion_: Pre-configured version bumping with a single command
 * Auto-release to PyPI_ when you push a new tag to master (optional)
-* Command line interface using Click (optional)
+* Command line interface using Fire (optional)
 
-.. _Cookiecutter: https://github.com/sandervandorsten/cookiecutter
+.. _Cookiecutter: https://github.com/sandervandorsten/cookiecutter-pypackage
+
+Differences from upstream repository
+------------------------------------
+* Allows for Google Docstring parsing with `sphinxcontrib.napoleon`
+* includes RST todos in docstring documentation by typing::
+
+    Todo:
+        * Something that needs to be done
+        * You have to also use ``sphinx.ext.todo`` extension
 
 Build Status
 -------------
